@@ -90,7 +90,7 @@ class Student{
                 count++;
             }
             else if((int)pass.charAt(i)==42 || (int)pass.charAt(i)==35 || (int)pass.charAt(i)==37 || (int)pass.charAt(i)==36 || (int)pass.charAt(i)==33){
-                ncase++;
+                scase++;
                 count++;
             }
         }

@@ -1,4 +1,4 @@
-package que1;
+package Assignment.que1;
 
 import java.io.File;
 import java.io.IOException;
