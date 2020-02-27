@@ -62,3 +62,39 @@ int i;
 		
 	}
 
+/* Output 
+
+gaurav@gaurav-VirtualBox:~/cs4b44/OS Practicals$ ./4.2
+Produce:0
+Produce:1
+Produce:2
+Produce:3
+Produce:4
+Produce:5
+Produce:6
+Produce:7
+Produce:8
+Produce:9
+Consume:9
+Consume:9
+Consume:9
+Consume:9
+Consume:9
+Consume:9
+Consume:9
+Consume:9
+Consume:9
+Consume:9
+Consume:9
+Consume:9
+Consume:9
+Consume:9
+Consume:9
+Produce:10
+Produce:11
+Produce:12
+Produce:13
+Produce:14
+
+*/
+

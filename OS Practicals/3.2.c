@@ -40,3 +40,12 @@ void *runner(void *param){
 	}
 	pthread_exit(0);
 }
+
+/* Output
+
+gaurav@gaurav-VirtualBox:~/cs4b44/OS Practicals$ ./3.2 10
+Thread-1 (ID) :2277
+Thread-2 (ID) :2276
+Sum=55
+
+*/

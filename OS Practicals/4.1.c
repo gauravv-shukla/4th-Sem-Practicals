@@ -74,5 +74,45 @@ int main(int agc, char **argv){
 			sem_close(sem);
 			exit(0);
 	}
-	
+
+/* Output 
+
+gaurav@gaurav-VirtualBox:~/cs4b44/OS Practicals$ ./4.1
+Semaphore initialised
+Inside child A
+Adding 200
+Parent process running
+p=1200
+Inside child A
+Adding 200
+p=1400
+Inside child A
+Adding 200
+p=1600
+Inside child A
+Adding 200
+p=1800
+Inside child A
+Adding 200
+p=2000
+Inside child B
+Adding 100
+Parent process running
+p=2100
+Inside child B
+Adding 100
+p=2200
+Inside child B
+Adding 100
+p=2300
+Inside child B
+Adding 100
+p=2400
+Inside child B
+Adding 100
+p=2500
+gaurav@gaurav-VirtualBox:~/cs4b44/OS Practicals$ 
+
+*/
+
 			

@@ -58,3 +58,35 @@ int main()
 	shmctl(segment_id,IPC_RMID,NULL);
 	return 0;
 }
+
+/* Output
+
+gaurav@gaurav-VirtualBox:~/cs4b44/OS Practicals$ ./3.1
+Enter no. of Rows and no. of Columns
+3
+3
+Enter value
+1
+Enter value
+2
+Enter value
+3
+Enter value
+4
+Enter value
+5
+Enter value
+6
+Enter value
+7
+Enter value
+8
+Enter value
+9
+Child process id is 2169
+Child process id is 2168
+Child process id is 2167
+Parent process id is 2114
+Total sum is 45
+
+*/
