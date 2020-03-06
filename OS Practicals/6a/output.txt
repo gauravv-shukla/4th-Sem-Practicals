@@ -1,0 +1,4 @@
+After Addition: 7 
+After Subtraction: -1 
+After Multiplication: 12 
+After Division: 0 
