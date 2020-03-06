@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Payment Page</title>
+	<link rel="stylesheet" type="text/css" href="atmform.css">
+</head>
+<body>
+	<script src="atmform.js"></script>
+	<div id="whole">
+		<header>
+			<h3><span style="position: relative;top: 8px;">Payment Information</span></h3>
+		</header>
+		<input type="text" name="name" placeholder=" First Name" id="name" style="margin-left: 2px;">
+		<input type="text" name="sname" placeholder=" Surname" id="sname"  style="margin-left:-4px;width: 408px;">
+		<input type="text" name="cno" placeholder=" Card Number" id="cdn">
+		<input type="text" name="date" placeholder=" MM/YY" id="date">
+		<input type="password" name="cvv" placeholder=" CVV" id="cvv" style="margin-left:-4.5px;width: 410px;">
+		<img src="debit.png">
+		<input type="text" name="addr" placeholder=" Street Address" id="Street">
+		<input type="text" name="city" placeholder=" City" id="city">
+		<input type="text" name="zip" placeholder=" ZIP code" id="zip" style="margin-left:-4.5px;width: 410px;">
+		<input type="email" name="email" placeholder=" Email" id="email">
+		<button onclick="check()">SUBMIT</button>
+	</div>
+
+</body>
+</html>

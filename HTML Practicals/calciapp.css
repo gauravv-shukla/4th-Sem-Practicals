@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  .greybox {
+    height: 570px;
+    width: 700px;
+    background-color: #ecedef;
+    border-radius: 20px;
+    display: flex;
+    margin-left: 350px;
+    margin-top: 100px;
+  }
+
+
+  .whitebox {
+      height: 350px;
+      width: 350px;
+      background-color: white;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      margin-left: -350px;
+      margin-top: 200px;
+      display: flex;
+    }
+  
+  #orangebox{
+      background-color: #ff060a;
+        height: 150px;
+        width: 350px;
+        margin-top: 50px;
+        margin-left: 180px;
+        text-align: right;
+        font-size: 50px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+  }
+
+  #screen{
+    background-color: #ff060a;
+    height: 150px;
+    width: 200px;
+    margin-top: 50px;
+    margin-left: 130px;
+    text-align: right;
+    font-size: 70px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  #one{
+    background-color: #ecedef;
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    float: left;
+    margin-top: 10px;
+    margin-left: 20px;
+    border: 0px;
+  }
+  
+  #two{
+    background-color:#ecedef;
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    float: left;
+    margin-top: 90px;
+    margin-left: -60px;
+    border: 0px;
+    float: left;
+  }
+  #three{
+    background-color: #ecedef;
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    float: left;
+    margin-top: 170px;
+    margin-left: -60px;
+    border: 0px;
+    float: left;
+
+  }
+  #four{
+    background-color: #ecedef;
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    float: left;
+    margin-top: 245px;
+    margin-left: -60px;
+    border: 0px;
+    float: left;
+
+  }
+
+  #one:hover{
+    background-color:#ebe8e8;
+  }
+  #two:hover{
+    background-color: #e8e8e8;
+  }
+  #three:hover{
+    background-color: #e8e8e8;
+  }
+  #four:hover{
+    background-color: #e8e8e8;
+  }

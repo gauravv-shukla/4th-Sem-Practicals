@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sorting Operations</title>
+</head>
+<body bgcolor="white">
+	<h1 align="center" style="color:black;font-size: 50px;">Sorting Operations</h1>
+	<br><br>
+	<button type="button" onclick="selectionsort()" style="font-size:20px;color:white;border-radius: 30px;background-color:#6bcdfd;height: 70px;width: 250px;margin-left: 630px;border: none;font-size: 25px;">Selection</button>
+	<br><br><br>
+	<button type="button" onclick="insertionsort()" style="font-size:20px;color:white;border-radius: 30px;background-color:#699cfc;height: 70px;width: 250px;margin-left: 630px;border: none;font-size: 25px;">Insertion</button>
+	<br><br><br>
+	<button type="button" onclick="bubblesort()" style="font-size:20px;color:white;border-radius: 30px;background-color:#6dfd9c;height: 70px;width: 250px;margin-left: 630px;border: none;font-size: 25px;">Bubble</button>
+	<br><br>
+	<p style="font-size: 20px;color: #6495ED;margin-left: 630px;">Array before sorting:</p>
+	<p id="demo" style="margin-left: 630px;font-size: 20px;"></p>
+	<p style="font-size: 20px;color: #5F9EA0;margin-left: 630px;">Array after sorting:</p>
+	<p id="demo1" style="margin-left: 630px;font-size: 20px;"></p>
+	<script type="text/javascript">
+		function selectionsort()
+		{
+			var i,j,temp,num;
+			var ar=[];
+			num=prompt("Enter how many elements to be sorted:");
+			for(i=0;i<num;i++)
+			{
+				ar[i]=prompt('Enter element '+(i+1));
+			}
+			document.getElementById("demo").innerHTML =ar;
+        	for (i=0;i<num;i++){ 
+            	var min_idx = i; 
+            	for (j=i+1;j<num;j++){
+                	if (ar[j]<ar[min_idx])
+                	{ 
+                    	min_idx=j; 
+                    }
+            	}
+           		temp=ar[min_idx]; 
+            	ar[min_idx]=ar[i]; 
+            	ar[i]=temp; 
+        	} 
+        	document.getElementById("demo1").innerHTML =ar;
+		}
+		function insertionsort(){
+			var i,j,temp,num;
+			var ar=new Array();
+			num=prompt("Enter how many elements to be sorted:");
+			for(i=0;i<num;i++){
+				ar[i]=prompt('Enter element '+(i+1));
+			}
+			document.getElementById("demo").innerHTML =ar;
+			for(i=0;i<num;i++){
+    			j=i-1;
+    			temp=ar[i];
+    			while(j>=0 && ar[j]>temp)
+    			{
+      				ar[j+1]=ar[j];
+      				j--;
+    			}
+    			ar[j+1]=temp;
+  			}
+  			document.getElementById("demo1").innerHTML =ar;
+		}
+		function bubblesort()
+		{
+			var i,temp,num,swap;
+			var ar=new Array();
+			num=prompt("Enter how many elements to be sorted:");
+			for(i=0;i<num;i++){
+				ar[i]=prompt('Enter element '+(i+1));
+			}
+			document.getElementById("demo").innerHTML =ar;
+			do{
+				swap=false;
+				for(i=0;i<num;i++){
+            		if(ar[i] > ar[i+1])
+            		{
+                		temp = ar[i];
+               			ar[i] = ar[i+1];
+               			ar[i+1] = temp;
+               			swap=true;
+            		}
+        		}
+        	}while(swap==true);
+        	document.getElementById("demo1").innerHTML =ar;
+		}
+	</script>
+</body>
+</html>

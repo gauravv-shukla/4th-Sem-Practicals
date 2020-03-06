@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Workshop</title>
+	<link rel="stylesheet" type="text/css" href="prac5.css">
+</head>
+<body>
+	<p id="demo">
+	<script>
+		function myFunction() {
+			prompt("Enter no. of registrations?");
+			var ticket = prompt("Cost(10$/ticket)");
+			if(ticket!=null){
+				window.alert("Total price for" +  ticket  + "ticket(s) is $");
+				window.alert(79.99*ticket);
+			}
+		}
+	</script>
+	</p>
+	<header>
+		<div class="seacrh" input type="text" placeholder="Search..."></div>
+		<div class="header">
+			<span class="dot1"></span>
+			<span class="dot2"></span>
+			<span class="dot3"></span>
+			
+		</div>
+		<div class="topright">
+			<button class="home"><u>HOME</u></span>
+			<button class="btn us">ABOUT US</span>
+			<button onclick="newwind()"class="btn speakers">SPEAKERS</span>
+			<button class="btn news">NEWS</span>
+			<button class="btn contacts">CONTACTS</span>
+			<button onclick="myFunction()" class="tickets">BUY TICKETS</span>
+		</div>
+		<script>
+			function newwind() {
+  				window.open("audvid.html");
+			}
+		</script>
+	</header>
+	<section>
+		<div class="shopbox">
+			<span id="work">Work</span>
+			<span id="shop">shop</span>
+		</div>	
+		<div class="con">
+			<h4> Conference 2019</h4>
+			<h1 class="web">WEB DESIGN<br>CONFERENCE 2019</h1>
+			<div><p class="date">September 6th-7th,Minnesota,United States</p></div>
+			<button onclick="myFunction()" class="buy"><p>BUY TICKETS</p>
+			
+		</div>
+	</section>
+	<footer>
+		<div>
+			<button onclick="newwind()" class="speaker"><h3>Speakers</h3>
+		</div>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>String Operation</title>
+</head>
+<body bgcolor="white">
+	<br>
+	<h1 style="color: black;text-align: center;font-size: 50px;">String Operation</h1>
+	<br><br><br>
+	<button type="button" onclick="string1()" style="font-size:20px;color:white;border-radius: 30px;background-color:#6bcdfd;height: 70px;width: 250px;margin-left: 630px;border: none;font-size: 25px;">Left Most vowel</button>
+	<br><br><br><br><br><br>
+	<button type="button" onclick="string2()" style="font-size:20px;color:white;background-color:#699cfc;height: 70px;width: 250px;border-radius: 30px;margin-left: 630px;border: none;font-size: 30px;">Reverse</button>
+	<br><br><br><br><br><br>
+	<button type="button" onclick="string3()" style="font-size:20px;color:white;background-color:#6dfd9c;margin-left: 630px;height: 70px;width: 250px;border-radius: 30px;border: none;font-size: 30px;">Concate</button>
+	<script type="text/javascript">
+		function string1()
+		{
+			var str=prompt("Enter string...");
+			var chr = "";
+			str = str.toUpperCase();
+			for(var i = 0; i < str.length; i++)
+			{
+				chr = str.charAt(i);
+				if(chr == 'A' || chr == 'E' || chr == 'I' || chr == 'O' || chr == 'U')
+				break;
+			}
+			if( i < str.length )
+			{
+				alert("Position of Left most vowel:"+(i+1));
+			}
+			else
+			{
+				alert("No Vowel found:");
+			}
+		}
+		function string2()
+		{
+			var str=prompt("Enter a string...");
+			var str1;
+			str1=str.split('').reverse().join('');
+			alert("Reversed string:"+str1); 
+		}
+		function string3()
+		{
+			var str1 =prompt("Enter String 1");
+			var str2 =prompt("Enter String 2");
+			var res = str1.concat(str2);
+			alert("Concated string :"+res);
+		}
+	</script>
+</body>
+</html>

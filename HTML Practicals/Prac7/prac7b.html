@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pie Charts</title>
+	<script src="http://code.highcharts.com/highcharts.js"></script>
+</head>
+<body>
+	<div id="container" style="height: 700px"></div>
+	<script>
+	Highcharts.chart('container', {
+    chart: {
+        type: 'pie'
+    },
+    title: {
+        text: 'Browser market shares in January, 2018'
+    },
+    series: [{
+        name: 'Brands ',
+        colorByPoint: true,
+        data: [{
+            name: 'Chrome 61.4',
+            y: 61.4,
+            sliced: true,
+            selected: true
+        }, {
+            name: 'QQ 1.2',
+            y: 1.2,
+        },{
+            name: 'Sogou Explorer 1.6',
+            y: 1.6,
+        },{
+            name: 'Internet Explorer 11.8',
+            y: 11.8,
+        }, {
+            name: 'Opera 1.6',
+            y: 1.6,
+        }, {
+            name: 'Firefox 10.9',
+            y: 10.9,
+        }, {
+            name: 'Edge 4.7',
+            y: 4.7,
+        }, {
+            name: 'Safari 4.2',
+            y: 4.2,
+        }, {
+            name: 'Other 2.6',
+            y: 2.6,
+        }]
+    }]
+});
+	</script>
+	
+</body>
+</html>

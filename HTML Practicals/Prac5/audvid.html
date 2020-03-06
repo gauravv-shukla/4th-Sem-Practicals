@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<title>Speakers</title>
+	<button onclick="playVid()" type="button" style="margin-top: 20px;margin-left: 100px;">Play Video</button>
+	<button onclick="pauseVid()" type="button" style="margin-left: 40px;">Pause Video</button><br> 
+
+	<video controls id="myVideo" width="400px" height="400px" style="margin-left: 100px;margin-top: 10px;">
+  			<source src="sample.mp4" type="video/mp4">
+	</video>
+	<audio controls style="margin-left: 50px;">
+  		<source src="flute_music.mp3" type="audio/mpeg">
+  	</audio>
+	<script> 
+		var vid = document.getElementById("myVideo"); 
+		function playVid() { 
+  			vid.play(); 
+		}
+		function pauseVid() { 
+  			vid.pause(); 
+		}
+	</script>
+</body>
+</html>

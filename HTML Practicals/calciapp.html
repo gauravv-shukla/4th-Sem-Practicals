@@ -1,0 +1,93 @@
+<html>
+<title>Calculator</title>
+<head>
+    <link rel="stylesheet" href="calciapp.css">
+    <script type="text/javascript">
+        var op;
+        var a="";
+        var b="";
+        var oper="";
+        var flag=0;
+        function check(c)
+        {
+          c=String(c);
+          if(flag==0 && (c!='+' && c!='-' && c!='*' && c!='/')){
+            a=a+c;
+            document.getElementById("screen").innerHTML=a;
+          }
+          else if((c=='+' || c=='-' || c=='*' || c=='/')){
+            flag=1;
+            oper=c;
+            document.getElementById("screen").innerHTML=a+oper;
+            return;
+          }
+          if (flag==1 && (c!='=')){
+            b=b+c;
+            document.getElementById("screen").innerHTML=a+oper+b;
+          }
+          if(c=='='){
+            flag=0;
+            if (oper=='+'){
+              add();
+              }
+            if (oper=='-'){
+              sub();
+            }
+            if (oper=='*'){
+              mul();
+            }
+            if (oper=='/'){
+              div();
+            }
+            a="";b="";oper="";c="";
+          }
+        }
+        function add()
+        {
+          op=parseFloat(a)+parseFloat(b)       
+          document.getElementById("screen").innerHTML=op;
+        }
+        function sub()
+        {
+          op=(a)-b;
+        document.getElementById("screen").innerHTML=op;
+        }
+        function mul()
+        {
+          op=parseFloat(a)*b;
+          document.getElementById("screen").innerHTML=op;
+        }
+        function div()
+        {
+          op=parseFloat(a)/b;
+          document.getElementById("screen").innerHTML=op;
+        }
+      </script>
+</head>    
+<body style="background-color:white;">  
+    <div class="greybox">
+      <div id="orangebox">
+        <div id="screen">
+            </div>
+      </div>
+                <div class="whitebox">
+                    <button  onclick="check(7)"     id="one" style="font-size:30px;">7</button>
+                    <button  onclick="check(4)"     id="two" style="font-size:30px;">4</button>
+                    <button  onclick="check(1)"     id="three" style="font-size:30px;">1</button>
+                    <button  onclick="check(0)"     id="four" style="font-size:30px;">0</button>
+                    <button  onclick="check(8)"     id="one" style="font-size:30px;">8</button>
+                    <button  onclick="check(5)"     id="two" style="font-size:30px;">5</button>
+                    <button  onclick="check(2)"     id="three" style="font-size:30px;">2</button>
+                    <button  onclick="check('.')"   id="four" style="font-size:30px;">.</button>
+                    <button  onclick="check(9)"     id="one" style="font-size:30px;">9</button>
+                    <button  onclick="check(6)"     id="two" style="font-size:30px;">6</button>
+                    <button  onclick="check(3)"     id="three" style="font-size:30px;">3</button>
+                    <button  onclick="check('/')"   id="four" style="font-size:30px;">/</button>
+                    <button  onclick="check('+')"   id="one" style="font-size:30px;">+</button>
+                    <button  onclick="check('-')"   id="two" style="font-size:30px;">-</button>
+                    <button  onclick="check('*')"   id="three" style="font-size:30px;">*</button>
+                    <button  onclick="check('=')"   id="four" style="background-color: #ff060a; font-size:30px;">=</button>
+                </div>
+    </div>
+</body>
+</html>
