@@ -1,0 +1,35 @@
+<html>
+<head>
+	<title>Calculator App</title>
+	<link rel="stylesheet" type="text/css" href="calci.css">
+  <script src="calci.js"></script>
+</head>
+<body>
+<form name="form">
+	<div id="cal" class="cal">
+		<div class="dis" id="dis">
+      <input type="text" placeholder="0" name="displayResult" />
+	</div>
+
+    <input type="button" class="clr" value="clr" name="clr" onClick="clearAll()"><br>
+		<input type="button" class="num1" value="7" name="b7" onClick="calcNumbers(b7.value)">
+		<input type="button" class="num1" value="8" name="b8" onClick="calcNumbers(b8.value)">
+		<input type="button" class="num1" value="9" name="b9" onClick="calcNumbers(b9.value)">
+		<input type="button" class="op1" value="+" name="plus" onClick="calcNumbers(plus.value)"><br>
+		<input type="button" class="num2" value="4" name="b4" onClick="calcNumbers(b4.value)">
+		<input type="button" class="num2" value="5" name="b5" onClick="calcNumbers(b5.value)">
+		<input type="button" class="num2" value="6" name="b6" onClick="calcNumbers(b6.value)">
+		<input type="button" class="op2"  value="-" name="subb" onClick="calcNumbers(subb.value)"><br>
+		<input type="button" class="num3" value="1" name="b1" onClick="calcNumbers(b1.value)">
+		<input type="button" class="num3" value="2" name="b2" onClick="calcNumbers(b2.value)">
+		<input type="button" class="num3" value="3" name="b3" onClick="calcNumbers(b3.value)">
+		<input type="button" class="op3" value="*" name="tim" onClick="calcNumbers(tim.value)"><br>
+		<input type="button" class="num4" value="0" name="b0" onClick="calcNumbers(b0.value)">
+		<input type="button" class="num4" value="." name="dot" onClick="calcNumbers(dot.value)">
+		<input type="button" class="op4" value="/" name="div" onClick="calcNumbers(div.value)">
+		<input type="button" class="equals" value="=" name="equ" onClick="displayResult.value=eval(displayResult.value)">
+	</div>
+</form>
+</body>
+
+	</html>
